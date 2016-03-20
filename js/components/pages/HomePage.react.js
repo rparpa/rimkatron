@@ -16,12 +16,6 @@ class HomePage extends Component {
       this.handleClick = this.handleClick.bind(this);
     }
 
-    getInitialState() {
-        return {
-            text: generate()
-        };
-    }
-
     handleClick(event) {
         this.setState({text: generate()});
     }
@@ -30,7 +24,7 @@ class HomePage extends Component {
         var text = this.state.text;
         return (
             <div>
-                <p>"{ text }"</p>
+                <p>"{ text }pd"</p>
                 <img onClick={this.handleClick} className="maclouf" src={ Maclouf } />
             </div>
             );

@@ -13,25 +13,16 @@
  * add it in the rootReducer.js.
  */
 
-import { CHANGE_OWNER_NAME, CHANGE_PROJECT_NAME } from '../constants/AppConstants';
 import assignToEmpty from '../utils/assign';
 
 const initialState = {
-  projectName: 'React.js Boilerplate',
-  ownerName: 'mxstbr'
+  projectName: 'Rimkatron',
+  ownerName: 'Rémi Parpaillon'
 };
 
 function homeReducer(state = initialState, action) {
   Object.freeze(state); // Don't mutate state directly, always use assign()!
   switch (action.type) {
-    case CHANGE_OWNER_NAME:
-      return assignToEmpty(state, {
-        ownerName: action.name
-      });
-    case CHANGE_PROJECT_NAME:
-      return assignToEmpty(state, {
-        projectName: action.name
-      });
     default:
       return state;
   }
