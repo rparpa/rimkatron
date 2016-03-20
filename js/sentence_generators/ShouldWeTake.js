@@ -22,10 +22,10 @@ var start = [
 ]
 
 var middle = [
-    'ne prendrions nous pas',
+    'ne prendrions-nous pas',
     'veux-tu prendre avec moi',
     "ne serait-t-il pas l'heure de prendre",
-    'ne serait-il-il pas temps de prendre',
+    'ne serait-il pas temps de prendre',
     'est-ce-que on ne prendrait pas'
 ]
 

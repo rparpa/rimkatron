@@ -24,8 +24,10 @@ class HomePage extends Component {
         var text = this.state.text;
         return (
             <div>
-                <p>"{ text }pd"</p>
-                <img onClick={this.handleClick} className="maclouf" src={ Maclouf } />
+                <blockquote className="home__blockquote">
+                    <p>{ text }</p>
+                </blockquote>
+                <img onClick={this.handleClick} className="home__maclouf btn" src={ Maclouf } />
             </div>
             );
         }
